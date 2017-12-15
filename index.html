@@ -1,37 +1,63 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
 
-You can use the [editor on GitHub](https://github.com/losterchristmas/xxbb/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+</style>
+<body>
+    <h1 id="dfc"  style="color:rgb(0, 0, 0)">大风车</h1>
+    <button type="button" onclick="changecolor()">点击这里</button>
+    <br/>
+    <img id="myimg" onclick="changeimage()" src="loadingon.gif">
+    <br/>
+    <input id="input" type="text">
+    <br/>
+    <br/>
+    <p>假设x=5，y=6，计算输出x+y的值。</p>
+    <p id="valuep"></p>
+    <br/>
+    <button type="button" onclick="mynumb()">计算</button>
+    <script>    
+    function changecolor(){
+        x=document.getElementById("dfc");
+        x.style.color="red";
+    }
+        function changeimage(){
+            x=document.getElementById("myimg");
+           
+            if(x.src.match("loadingon"))
+            {
+                x.src="loadingoff.jpg";
+            }
+            else
+            {
+                x.src="loadingon.gif";
+            }
+            console.log(x.src);
+        }
+    function myfunction(){
+        var x=document.getElementById("input").value;
+        if(x==""|isNaN(x))
+        {
+            alert("输入有误,请重新输入");
+        }
+    }
+    function mynumb(){
+        var x=5;
+        var y=6;
+        var p=x+y;
+        var myvalue=document.getElementById("valuep");
+        myvalue.innerHTML="x+y="+p;
+    }
+    </script>
+    <button type="button" onclick="myfunction()">确认</button>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/losterchristmas/xxbb/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
