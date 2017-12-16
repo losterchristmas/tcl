@@ -4,60 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>汤陈龙的网站</title>
 </head>
 <style>
+    #all{padding: 15px;
+        width: 1000px;
+        height: 350px;
+        border: 1px dotted red;
+        margin: 15px;
+
+    }
+#h1{
+    color: white;
+    background-color:black;
+  
+ 
+    }
+#h2{color: red}
+#p1{
+    /* background-color: yellow; */
+    width: 400px;
+    height: 200px;
+    float: right;
+    padding: 10px;
+    /* border: 1px solid red; */
+    /* margin: 15px; */
+    /* text-align: center; */
+}
+#p2{
+    /* background-color: yellow; */
+    width: 400px;
+    height: 200px;
+    float: left;
+    padding: 10px;
+    /* border: 1px solid red; */
+    /* margin: 15px; */
+    /* text-align: center; */
+}
+#p3{
+     /* background-color: yellow;  */
+    width: 600px;
+    height: 400px;    
+    padding: 10px;
+    border: 1px dotted red;
+    margin: 15px;
+    /* text-align: center; */
+}
+#img1{
+      
+    width: 1200px;
+    height: 350px;
+    padding: 5px;
+    border: 1px dotted red;
+    margin: 15px;
+}
+#img2{
+     
+    width: 1200px;
+    height: 450px;
+    padding: 5px;
+    border: 1px dotted red;
+    margin: 15px;
+}
+p{color: white}
 
 </style>
-<body>
-    <h1 id="dfc"  style="color:rgb(0, 0, 0)">大风车</h1>
-    <button type="button" onclick="changecolor()">点击这里</button>
-    <br/>
-    <img id="myimg" onclick="changeimage()" src="loadingon.gif">
-    <br/>
-    <input id="input" type="text">
-    <br/>
-    <br/>
-    <p>假设x=5，y=6，计算输出x+y的值。</p>
-    <p id="valuep"></p>
-    <br/>
-    <button type="button" onclick="mynumb()">计算</button>
-    <script>    
-    function changecolor(){
-        x=document.getElementById("dfc");
-        x.style.color="red";
-    }
-        function changeimage(){
-            x=document.getElementById("myimg");
-           
-            if(x.src.match("loadingon"))
-            {
-                x.src="loadingoff.jpg";
-            }
-            else
-            {
-                x.src="loadingon.gif";
-            }
-            console.log(x.src);
-        }
-    function myfunction(){
-        var x=document.getElementById("input").value;
-        if(x==""|isNaN(x))
-        {
-            alert("输入有误,请重新输入");
-        }
-    }
-    function mynumb(){
-        var x=5;
-        var y=6;
-        var p=x+y;
-        var myvalue=document.getElementById("valuep");
-        myvalue.innerHTML="x+y="+p;
-    }
-    </script>
-    <button type="button" onclick="myfunction()">确认</button>
+<body style="background-color:black">
+    <div id="h1">
+    <h1 style="text-align:center">欢迎来到汤陈龙的网页</h1>
+    </div>
+    <div id="all">
+    <h2 id="h2">基本资料</h2>
+    
+    <div id="p2">
+    <p>姓名：汤陈龙</p>                          
+    <p>性别：男</p>                            
+    <p>年龄：21岁</p>
+    <p>民族：侗族 </p>                          
+    <p>出生年月：1995年12月</p>                 
+    </div>
+    
+    <div id="p1">        
+     <p>籍贯：广西桂林</p>
+     <p>学历：本科</p>
+     <p> 专业：计算机科学与技术</p>
+     <p> QQ：13********</p>
+     <p> 手机：182**********</p>
+     </div>
+     
+    </div>
+    
+    <div id="p3">
+    <h2 id="h2">获奖情况</h2>
+    <p>2009年7月：获得“西普杯”广西象棋锦标赛青少年组第一名； </p>
+    <p>2010年7月：获得广东省“小五羊杯”青少年象棋锦标赛男子甲组第八名；</p>
+    <p>2012年7月：获得广东省“小五羊杯”青少年象棋锦标赛男子甲组第六名；</p>
+    <p>2014年12月：获得校级新生赛中国象棋比赛个人赛第一名；</p>
+    <p>2015年4月：获得中山市五校联赛象棋比赛个人赛第一名；</p>
+    <p>2015年4月：获得中山市五校联赛象棋比赛团体赛第一名；</p>
+    <p>2016年4月：获得中山市五校联赛象棋比赛个人赛第一名；</p>
+    <p>2017年4月：获得中山市五校联赛象棋比赛个人赛第一名；</p>
+    </div>
 
-
-
+ 
+   
+     <div id="img1">
+    <h2 id="h2">荣誉证书</h2>
+    <img src="2017年五校联赛第一名.jpg"height="150"width="200" >
+    <img src="2010年桂林市中学组第一名.bmp"height="150"width="200" >
+    <img src="2009年广西省青少年组第一名.jpg"height="150"width="200" >
+    <img src="2009年广东省第六届“小五羊杯”青少年男子甲组.bmp"height="150"width="200" >
+    <img src="2009年二级运动员证书.jpg"height="150"width="200" >
+    </div> --> -->
+    <div id="img2">
+    <h2 id="h2">集体照片</h2>
+    <img src="裁判1.jpg"height="150"width="200" >
+    <img src="裁判2.jpg"height="150"width="200" >
+    <img src="车轮战1.jpg"height="150"width="200" >
+    <img src="车轮战2.jpg"height="150"width="200" >
+    <img src="颁奖1.jpg"height="150"width="200" >
+    <img src="颁奖2.jpg"height="150"width="200" >
+    <img src="颁奖3.jpg"height="150"width="200" >
+    <img src="颁奖4.jpg"height="150"width="200" >
+    <img src="颁奖5.jpg"height="150"width="200" >
+    </div>
 </body>
 </html>
