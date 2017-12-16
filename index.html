@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>汤陈龙的网站</title>
 </head>
+<script src="jquery-1.11.3.min.js"></script>
 <script>
+     $(function(){
+        setInterval(function(){$(".loading").fadeOut();},3000)
+    })
      function changeimage(){
             x=document.getElementById("myimg");
            
@@ -20,10 +24,18 @@
             }
             console.log(x.src);
         }
+        function myfunction(){
+           
+        }
 
     </script>
 <style>
-    #all{padding: 15px;
+     .loading{width: 100%;height: 100%;position: fixed;top:0;left:0;z-index: 100;background:white}
+    .loading .pic{width: 64px;height: 64px ;top:0;left: 0;background:url(loadingon.gif);position: absolute;top:0;bottom:0;left: 0;right: 0;margin: auto; }
+
+    #all{
+        /* background: red; */
+        padding: 15px;
         width: 1000px;
         height: 350px;
         border: 1px dotted red;
@@ -41,6 +53,16 @@
         right: 10px;
         
         top: 10px;       
+    }
+    #a1{
+        width: 100px;
+        height: 25px;
+        /* border: 1px dotted red; */
+        position: absolute;
+        right: 10px;
+        color: red;
+        bottom: 10px;
+        text-align: center;
     }
 #h1{
     color: white;
@@ -106,9 +128,13 @@
     position: relative;
    }
 p{color: white}
-
 </style>
+
+
 <body style="background-color:black">
+        <div class="loading">
+                <div class="pic"></div>
+            </div>
     <div id="h1">
     <h1 style="text-align:center">欢迎来到汤陈龙的网页</h1>
     </div>
@@ -122,7 +148,7 @@ p{color: white}
     <p>民族：侗族 </p>                          
     <p>出生年月：1995年12月</p>                 
     </div>
-    
+    <a id="a1" href = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=80035161_2_dg&wd=%E6%B1%A4%E9%99%88%E9%BE%99%E6%A1%82%E5%86%A0&oq=%25E6%25B1%25A4%25E9%2599%2588%25E9%25BE%2599%25E6%25A1%2582%25E5%2586%25A0&rsv_pq=9b03b25f00069594&rsv_t=7307RBtWQ59%2Bzbf9KXC9MAgWcMBhVSEeMvNnGkev3Fyd85QSqKHs67nd4EpvLvS9y2o8vA&rqlang=cn&rsv_enter=0&rsv_sug3=5&rsv_sug1=1&rsv_sug7=100&inputT=4982&rsv_sug4=6224&rsv_sug=1" target="_blank">个人信息</a>
     <div id="p1">        
      <p>籍贯：广西桂林</p>
      <p>学历：本科</p>
