@@ -6,13 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>汤陈龙的网站</title>
 </head>
+<script>
+     function changeimage(){
+            x=document.getElementById("myimg");
+           
+            if(x.src.match("loadingon"))
+            {
+                x.src="loadingoff.jpg";
+            }
+            else
+            {
+                x.src="loadingon.gif";
+            }
+            console.log(x.src);
+        }
+
+    </script>
 <style>
     #all{padding: 15px;
         width: 1000px;
         height: 350px;
         border: 1px dotted red;
-        margin: 15px;
-
+        position: relative;
+        right: 0;
+        left: 0;
+       
+        margin: auto;
+    }
+    #dfc{
+        width: 64px;
+        height: 64px;
+        border: 1px dotted red;
+        position: absolute;
+        right: 10px;
+        
+        top: 10px;       
     }
 #h1{
     color: white;
@@ -41,31 +69,42 @@
     /* margin: 15px; */
     /* text-align: center; */
 }
-#p3{
-     /* background-color: yellow;  */
-    width: 600px;
-    height: 400px;    
-    padding: 10px;
-    border: 1px dotted red;
-    margin: 15px;
-    /* text-align: center; */
-}
-#img1{
-      
-    width: 1200px;
+#p3{padding: 15px;
+    width: 1000px;
     height: 350px;
-    padding: 5px;
     border: 1px dotted red;
-    margin: 15px;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 10px;
+    margin: auto;
 }
-#img2{
-     
-    width: 1200px;
+#img1{padding: 15px;
+    width: 1000px;
     height: 450px;
-    padding: 5px;
     border: 1px dotted red;
-    margin: 15px;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 20px;
+    margin: auto;
 }
+#img2{padding: 15px;
+    width: 1000px;
+    height: 600px;
+    border: 1px dotted red;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 10px;
+    margin: auto;
+}
+#pic{padding: 15px;
+    width: 200px;
+    height: 150px;
+    border: 1px dotted red;
+    position: relative;
+   }
 p{color: white}
 
 </style>
@@ -91,7 +130,7 @@ p{color: white}
      <p> QQ：13********</p>
      <p> 手机：182**********</p>
      </div>
-     
+     <div id="dfc"><img id="myimg" onclick="changeimage()" src="loadingon.gif"></div>
     </div>
     
     <div id="p3">
@@ -110,23 +149,23 @@ p{color: white}
    
      <div id="img1">
     <h2 id="h2">荣誉证书</h2>
-    <img src="2017年五校联赛第一名.gif"height="150"width="200" >
-    <img src="2010年桂林市中学组第一名.gif"height="150"width="200" >
-    <img src="2009年广西省青少年组第一名.gif"height="150"width="200" >
-    <img src="2009年广东省第六届“小五羊杯”青少年男子甲组.gif"height="150"width="200" >
-    <img src="2009年二级运动员证书.gif"height="150"width="200" >
+    <img src="2017年五校联赛第一名.gif"height="150"width="200" id="pic">
+    <img src="2010年桂林市中学组第一名.gif"height="150"width="200" id="pic">
+    <img src="2009年广西省青少年组第一名.gif"height="150"width="200" id="pic">
+    <img src="2009年广东省第六届“小五羊杯”青少年男子甲组.gif"height="150"width="200" id="pic">
+    <img src="2009年二级运动员证书.gif"height="150"width="200"id="pic" >
     </div> --> -->
     <div id="img2">
     <h2 id="h2">集体照片</h2>
-    <img src="裁判1.gif"height="150"width="200" >
-    <img src="裁判2.gif"height="150"width="200" >
-    <img src="车轮战1.gif"height="150"width="200" >
-    <img src="车轮战2.gif"height="150"width="200" >
-    <img src="颁奖1.gif"height="150"width="200" >
-    <img src="颁奖2.gif"height="150"width="200" >
-    <img src="颁奖3.gif"height="150"width="200" >
-    <img src="颁奖4.gif"height="150"width="200" >
-    <img src="颁奖5.gif"height="150"width="200" >
+    <img src="裁判1.gif"height="150"width="200" id="pic">
+    <img src="裁判2.gif"height="150"width="200" id="pic">
+    <img src="车轮战1.gif"height="150"width="200" id="pic">
+    <img src="车轮战2.gif"height="150"width="200" id="pic">
+    <img src="颁奖1.gif"height="150"width="200" id="pic">
+    <img src="颁奖2.gif"height="150"width="200" id="pic">
+    <img src="颁奖3.gif"height="150"width="200" id="pic">
+    <img src="颁奖4.gif"height="150"width="200" id="pic">
+    <img src="颁奖5.gif"height="150"width="200" id="pic">
     </div>
 </body>
 </html>
